@@ -26,13 +26,20 @@
 
 ## Part III
 
-指出下面这段代码存在的问题，并重构它：
+有一天，你收到且只收到这么一段代码：
 
 ```php
-$arr = array('P.R. China', 'United States', 'Taiwan');
-$i = 0;
-while($i < count($arr)) {
-    echo $arr[$i];
-    $i++;
+function filter($arr, $check, $check2 = null)
+{
+    $new_arr = [];
+    while ($i < count($arr)) {
+        if (strpos($arr[$i], $check) || strpos($arr[$i], $check2))
+          $new_arr[] = $arr[$i];
+        $i++;
+    }
+    return $new_arr;
 }
 ```
+
+原来的编写者试图将出现过两种特定字符串的元素挑出来，而我们认为这个方法很糟糕。
+于是，你接到了任务：找出这段代码所存在的问题，并且重构这个方法。
