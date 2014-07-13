@@ -5,12 +5,14 @@
 用简洁准确的语言回答以下问题。
 
 - OAuth 协议是如何保证安全的？
-- 使用 MVC 和 ORM 有哪些优点和缺点?
+- ORM 有哪些优点和缺点?
 
 可选题目：
 
-- Yii Framework 使用 Components 模式有哪些优点和缺点？
-- Laravel 使用 Facade 模式有哪些优点和缺点？
+有如下两种典型的设计模式，简述你对两者的评价：
+
+- Yii Framework Components
+- Laravel Facade
 
 ## Part II
 
@@ -22,22 +24,25 @@
 可选题目：
 
 - 使用 HighCharts 显示股价走势图。
-- 求出平均股价。
+- 求出查询日期内的收盘价的平均值。
 
 ## Part III
 
 在工作中，你看到了这么一段代码：
 
 ```php
-function filter($arr, $check, $check2 = null)
+class Category
 {
-    $new_arr = [];
-    while ($i < count($arr)) {
-        if (strpos($arr[$i], $check) || strpos($arr[$i], $check2))
-          $new_arr[] = $arr[$i];
-        $i++;
+    public function filter($check, $check2 = null)
+    {
+        $new_arr = [];
+        while ($i < count($this->list)) {
+            if (strpos($this->list[$i], $check) || strpos($this->list[$i], $check2))
+              $new_arr[] = $this->list[$i];
+            $i++;
+        }
+        return $new_arr;
     }
-    return $new_arr;
 }
 ```
 
