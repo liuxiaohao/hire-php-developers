@@ -1,26 +1,36 @@
 # 我们 + 你 = ∞
 
-## 关于我们
+感谢你对 [RightCapital LLC](http://join.rightcapital.com/) 的后端开发工程师一职感兴趣。我们为你准备了几个技术上的问题。你可以查阅资料，但请务必独立完成。我们会在电话面试中听取你的答案并作出反馈。
 
-> 我们是一个位于美国／香港／北京的创业公司，我们致力于创建一个面向美国市场的专业金融服务网站。
-> 关于招聘要求，薪资福利，项目发展请参考 https://careers.ngfplanner.com/ 。
+### 问题一：
 
-我们目前在工作中使用的部分软件、工具或服务：
+输出 10,000 以内的`三生素数`，以换行符分隔。
 
-- Atlassian: JIRA, Confluence, HipChat, Stash, Bamboo, SourceTree
-- Google Apps, AWS, GAE, Logentries, NewRelic, MailGun, Stripe, Apiary, Pixelapse
-- PHPStorm, Sublime, VIM
+> 注意：
+- 请使用 PHP 实现。
+- 尽可能减少程序运行时间。
+- 请将结果使用 [gist](https://gist.github.com/) 提前发送到 `yaodong.zhao@rightcapital.com`。
 
-我们要求代码和解决方案的优雅简洁，即使是在生产环境。
+### 问题二：
 
-我们只招聘有共同世界观和价值观的人，不会有不容易相处的同事。
+我们已经有了一个爬虫程序（Spider）来为我们抓取某种股票数据。现在需要一个新的程序（Manager）负责这些数据的存储和检索。
 
-## 如何做题
+那么，如果你来负责这个程序的开发：
 
-- 时间：自选一周时间独立完成，可以查询或者参考任何资料，最好不依赖其他框架和库。
-- 提交：请将代码提交到 Github 或者 BitBucket，然后将 URL 发送到 austin@ngfplanner.com
+- 你需要了解哪些技术细节？
+- 为什么需要了解这些技术细节？
 
-## 开始做题
+> 注意：
+- 你只需要在电话中口述。
+- 你可以事先做好笔记。
+- 假设只单独使用一台服务器，配置 32 G RAM 和 8 CPU Cores，充足的硬盘存储空间。
+- 你可以使用 PHP 5.5，MySQL 5.5，Redis 2.8.19。
+- 你可以根据自己的经验，尽可能多地提问。
 
-- 前端： [frontend.md](frontend.md)
-- 后端： [backend.md](backend.md)
+### 问题三：
+
+使用尽可能简单的语言讲解 OAuth 协议。
+
+> 注意：
+- 你只需要在电话中口述。
+- 你可以事先做好笔记。
